@@ -1,0 +1,77 @@
+@import '@piximind/ds-p-23/lib/main.css';
+@import './pages/login&&signup.css';
+* {
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+}
+.default-btn.primary{
+    color: #fff;
+    background: #4070f4;
+    outline: none;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+.default-btn.primary:hover{
+    background: #0339cc;
+}
+#root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-page {
+    flex-grow: 1;
+}
+.ds-bg-blue{
+    background-color: #4070f4;
+}
+.ds-text-white{
+    color: white;
+}
+.ds-box-shadow-white{
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ds-row{
+    margin: 0px;
+    width: 100%;
+}
+.ds-relative{
+    position: relative;
+}
+@media (max-width:576px) {
+    .ds-px-15{
+        padding: 0px;
+        padding-bottom: 16px;
+    }
+}
+.max-width-430{
+    max-width: 430px;
+    width: 100%;
+}
+.ds-color-333{
+color: #333;
+}
+.text-weight-600 {
+font-weight: 600;
+}
+.ds-text-blue{
+    color:#4070f4 ;
+}
+.ds-decorator-none{
+    text-decoration: none;
+}
+.font-weight-400{
+    font-weight: 400;
+}
+.color-67{
+    color: #676767 !important;
+}
+.bg-test{
+    background: rgba(92,94,109,.05) !important;
+    border: none;
+}
