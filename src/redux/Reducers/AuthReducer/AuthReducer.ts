@@ -1,10 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { IAuthReducer } from '../../interfaces';
+import { IAuthReducer } from '../../../interfaces';
 
 
 const initialState: IAuthReducer = {
     accessToken: "",
-    refreshToken: ""
+    refreshToken: "",
+    user:null
 
 };
 
@@ -15,10 +16,12 @@ const AuthReducer = createSlice({
         setLogin: (state: IAuthReducer, action) => {
             state.accessToken = action.payload.accessToken
             state.refreshToken = action.payload.refreshToken
+            state.user=action.payload.user
         },
         setLogout: (state: IAuthReducer) => {
-            state.accessToken = "",
+            state.accessToken = ""
             state.refreshToken = ""
+            state.user=null
         },
     }
 });
